@@ -1,6 +1,10 @@
 'use strict';
 // SELECTING ELEMENTS
 // SWITCHING PLAYERS CONSTS
+var isMobile =
+  Math.min(window.screen.width, window.screen.height) < 768 ||
+  navigator.userAgent.indexOf('Mobi') > -1;
+
 const player0El = document.querySelector(`.player--0`);
 const player1El = document.querySelector(`.player--1`);
 
